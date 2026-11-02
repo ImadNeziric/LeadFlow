@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0d14">
+
+  <meta name="description" content="LeadFlow helps home-service businesses capture inquiries, organize leads, track follow-ups, and measure opportunities in one place.">
+
+  <title>LeadFlow — Turn Inquiries Into Opportunities</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <a class="brand" href="#home" aria-label="LeadFlow home">
+      <span class="brand-mark">L</span>
+      <span>Lead<span class="brand-accent">Flow</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation" aria-expanded="false"
+      aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a class="nav-login" data-demo-link href="#demo">Open app ↗</a>
+      <a class="button button-small" data-demo-link href="#demo">Get started</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          LEAD MANAGEMENT, WITHOUT THE CHAOS
+        </div>
+
+        <h1>Every lead deserves <span class="gradient-text">a follow-up.</span></h1>
+
+        <p class="hero-description">
+          Keep customer inquiries organized, track every opportunity,
+          and see which leads turn into jobs — all from one workspace.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button" data-demo-link href="#demo">Explore LeadFlow <span>→</span></a>
+          <a class="button button-secondary" href="#how-it-works">See how it works</a>
+        </div>
+
+        <div class="hero-note">
+          <span class="check-icon">✓</span>
+          Built for service businesses that want a clearer sales pipeline.
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="LeadFlow dashboard preview">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+
+        <div class="dashboard-window">
+          <div class="window-top">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>LEADFLOW / OVERVIEW</span>
+            <span class="window-live"><i></i> Workspace</span>
+          </div>
+
+          <div class="dashboard-body">
+            <aside class="mock-sidebar">
+              <div class="mock-logo">L</div>
+              <div class="side-item active"><span>▦</span> Overview</div>
+              <div class="side-item"><span>◈</span> All leads</div>
+              <div class="side-item"><span>↗</span> Reports</div>
+              <div class="side-item"><span>⚙</span> Settings</div>
+              <div class="side-bottom">Your business<br><strong>Workspace</strong></div>
+            </aside>
+
+            <div class="mock-main">
+              <div class="mock-heading">
+                <div>
+                  <small>YOUR WORKSPACE</small>
+                  <h3>Lead overview</h3>
+                </div>
+                <span class="mock-date">This workspace</span>
+              </div>
+
+              <div class="metric-grid">
+                <div class="metric-card">
+                  <small>Total leads</small>
+                  <strong>128</strong>
+                  <span>All inquiries</span>
+                </div>
+                <div class="metric-card">
+                  <small>Open leads</small>
+                  <strong>34</strong>
+                  <span>Need attention</span>
+                </div>
+                <div class="metric-card">
+                  <small>Won-job value</small>
+                  <strong>$8.4k</strong>
+                  <span>Recorded value</span>
+                </div>
+              </div>
+
+              <div class="mock-panel">
+                <div class="panel-heading">
+                  <strong>Recent opportunities</strong>
+                  <span>Pipeline preview</span>
+                </div>
+
+                <div class="lead-row">
+                  <span class="avatar avatar-blue">JM</span>
+                  <div class="lead-person"><strong>Jordan M.</strong><small>Plumbing repair</small></div>
+                  <span class="lead-status status-new">New</span>
+                </div>
+                <div class="lead-row">
+                  <span class="avatar avatar-purple">AK</span>
+                  <div class="lead-person"><strong>Alex K.</strong><small>Roof inspection</small></div>
+                  <span class="lead-status status-contacted">Contacted</span>
+                </div>
+                <div class="lead-row">
+                  <span class="avatar avatar-green">SR</span>
+                  <div class="lead-person"><strong>Sam R.</strong><small>Heating repair</small></div>
+                  <span class="lead-status status-won">Won</span>
+                </div>
+              </div>
+
+              <p class="mock-disclaimer">
+                Illustrative preview — not live customer data.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="floating-chip"><span>✓</span> One organized pipeline</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <p>DESIGNED FOR BUSINESSES THAT RUN ON INQUIRIES</p>
+      <div class="industry-list">
+        <span>⌁ Plumbing</span>
+        <span>⌂ Roofing</span>
+        <span>❄ HVAC</span>
+        <span>✳ Cleaning</span>
+        <span>↗ Other services</span>
+      </div>
+    </section>
+
+    <section class="section-shell section-block" id="features">
+      <div class="section-heading">
+        <span class="eyebrow">A CLEARER WAY TO WORK</span>
+        <h2>Less chasing spreadsheets.<br><span class="gradient-text">More control over your leads.</span></h2>
+        <p>Bring the important parts of your lead process into one organized workspace.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">↘</div>
+          <h3>Capture inquiries</h3>
+          <p>Give customers a dedicated form to share their contact information and service needs.</p>
+          <span class="feature-number">01 / CAPTURE</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">▦</div>
+          <h3>Manage your pipeline</h3>
+          <p>Organize leads by status, search your opportunities, and record notes as you follow up.</p>
+          <span class="feature-number">02 / ORGANIZE</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">↗</div>
+          <h3>Track outcomes</h3>
+          <p>Record estimated and won-job values, review conversion metrics, and export lead data.</p>
+          <span class="feature-number">03 / MEASURE</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="workflow-section" id="how-it-works">
+      <div class="section-shell workflow-layout">
+        <div class="workflow-copy">
+          <span class="eyebrow">FROM INQUIRY TO OUTCOME</span>
+          <h2>A process you can <span class="gradient-text">actually follow.</span></h2>
+          <p>LeadFlow gives you a practical place to manage the inquiries your business receives.</p>
+
+          <div class="workflow-step">
+            <span>01</span>
+            <div><h3>Receive the inquiry</h3><p>A customer submits your business's inquiry form.</p></div>
+          </div>
+          <div class="workflow-step">
+            <span>02</span>
+            <div><h3>Track the opportunity</h3><p>Review the lead, record notes, and update its status.</p></div>
+          </div>
+          <div class="workflow-step">
+            <span>03</span>
+            <div><h3>Record the result</h3><p>Mark the outcome and track the value of jobs you win.</p></div>
+          </div>
+        </div>
+
+        <div class="workflow-visual">
+          <div class="pipeline-card">
+            <div class="pipeline-header"><strong>Your lead pipeline</strong><span>Example</span></div>
+            <div class="pipeline-column">
+              <div class="pipeline-label"><span class="pipeline-dot dot-blue"></span> NEW <span>01</span></div>
+              <div class="pipeline-lead"><strong>Leaking kitchen tap</strong><small>Plumbing · Web inquiry</small></div>
+            </div>
+            <div class="pipeline-column">
+              <div class="pipeline-label"><span class="pipeline-dot dot-yellow"></span> CONTACTED <span>02</span></div>
+              <div class="pipeline-lead"><strong>Roof inspection</strong><small>Roofing · Referral</small></div>
+            </div>
+            <div class="pipeline-column">
+              <div class="pipeline-label"><span class="pipeline-dot dot-green"></span> WON <span>03</span></div>
+              <div class="pipeline-lead"><strong>Heating repair</strong><small>HVAC · Job recorded</small></div>
+            </div>
+            <p class="pipeline-note">Illustrative examples, not actual customer records.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section-shell section-block demo-section" id="demo">
+      <div class="section-heading">
+        <span class="eyebrow">EXPLORE BEFORE YOU BUY</span>
+        <h2>See LeadFlow <span class="gradient-text">in action.</span></h2>
+        <p>Explore a sample owner dashboard and customer inquiry form. This is a safe, read-only demonstration using fictional data.</p>
+      </div>
+
+      <div class="demo-shell">
+        <div class="demo-toolbar">
+          <div>
+            <span class="demo-kicker">LEADFLOW PREVIEW</span>
+            <h3>Choose a view</h3>
+          </div>
+          <div class="demo-tabs" role="tablist" aria-label="Demo views">
+            <button class="demo-tab active" id="ownerTab" type="button" role="tab"
+              aria-selected="true" aria-controls="ownerDemo" data-demo-tab="owner">Owner dashboard</button>
+            <button class="demo-tab" id="formTab" type="button" role="tab"
+              aria-selected="false" aria-controls="formDemo" data-demo-tab="form">Customer form</button>
+          </div>
+        </div>
+
+        <div class="demo-disclaimer">
+          <span aria-hidden="true">ⓘ</span>
+          Demo mode — sample names and figures only. Changes and form submissions are not saved or sent.
+        </div>
+
+        <div class="demo-view" id="ownerDemo" role="tabpanel" aria-labelledby="ownerTab" data-demo-panel="owner">
+          <div class="demo-app-frame">
+            <aside class="demo-sidebar">
+              <div class="demo-brand"><span class="brand-mark">L</span><strong>LeadFlow</strong></div>
+              <div class="demo-side-item active"><span>▦</span> Overview</div>
+              <div class="demo-side-item"><span>◈</span> All leads</div>
+              <div class="demo-side-item"><span>↗</span> Reports</div>
+              <div class="demo-side-item"><span>⚙</span> Settings</div>
+              <div class="demo-sidebar-bottom">SAMPLE WORKSPACE<br><strong>Northstar Home Services</strong></div>
+            </aside>
+
+            <div class="demo-main">
+              <div class="demo-main-heading">
+                <div><small>SAMPLE WORKSPACE</small><h3>Lead overview</h3><p>Here's how a business owner could organize incoming opportunities.</p></div>
+                <span class="demo-sample-badge">DEMO DATA</span>
+              </div>
+
+              <div class="demo-metrics">
+                <article class="demo-metric"><span>Total leads</span><strong>128</strong><small>All inquiries</small></article>
+                <article class="demo-metric"><span>Open leads</span><strong>34</strong><small>Need follow-up</small></article>
+                <article class="demo-metric"><span>Won-job value</span><strong>$8,400</strong><small>Recorded sample value</small></article>
+                <article class="demo-metric"><span>Conversion</span><strong>24%</strong><small>Illustrative rate</small></article>
+              </div>
+
+              <div class="demo-leads-panel">
+                <div class="demo-leads-header">
+                  <div><h4>Recent opportunities</h4><p>Use the status filters to explore the sample pipeline.</p></div>
+                  <label class="demo-filter-label" for="demoStatusFilter">Status
+                    <select id="demoStatusFilter">
+                      <option value="all">All statuses</option>
+                      <option value="New">New</option>
+                      <option value="Contacted">Contacted</option>
+                      <option value="Qualified">Qualified</option>
+                      <option value="Won">Won</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="demo-lead-list" id="demoLeadList">
+                  <div class="demo-lead-row" data-status="New">
+                    <span class="demo-avatar blue">JM</span><div class="demo-lead-name"><strong>Jordan Miller</strong><small>Plumbing repair · Website form</small></div><span class="demo-status new">New</span><span class="demo-value">$450 est.</span>
+                  </div>
+                  <div class="demo-lead-row" data-status="Contacted">
+                    <span class="demo-avatar purple">AK</span><div class="demo-lead-name"><strong>Alex Kim</strong><small>Roof inspection · Referral</small></div><span class="demo-status contacted">Contacted</span><span class="demo-value">$900 est.</span>
+                  </div>
+                  <div class="demo-lead-row" data-status="Qualified">
+                    <span class="demo-avatar gold">SR</span><div class="demo-lead-name"><strong>Sam Rivera</strong><small>Heating repair · Google</small></div><span class="demo-status qualified">Qualified</span><span class="demo-value">$1,200 est.</span>
+                  </div>
+                  <div class="demo-lead-row" data-status="Won">
+                    <span class="demo-avatar green">TC</span><div class="demo-lead-name"><strong>Taylor Chen</strong><small>Drain cleaning · Phone</small></div><span class="demo-status won">Won</span><span class="demo-value">$650 won</span>
+                  </div>
+                </div>
+                <p class="demo-empty" id="demoEmptyState" hidden>No sample leads match that status.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-view" id="formDemo" role="tabpanel" aria-labelledby="formTab" data-demo-panel="form" hidden>
+          <div class="customer-form-demo">
+            <div class="customer-form-copy">
+              <span class="eyebrow">CUSTOMER-FACING PREVIEW</span>
+              <h3>Request a service</h3>
+              <p>A customer-facing inquiry form can collect the details a business needs to follow up.</p>
+              <ul>
+                <li>Contact information</li>
+                <li>Requested service</li>
+                <li>Job location and description</li>
+              </ul>
+            </div>
+            <form class="sample-inquiry-form" id="sampleInquiryForm">
+              <div class="sample-form-top"><span class="brand-mark">L</span><div><strong>Northstar Home Services</strong><small>Sample customer inquiry form</small></div></div>
+              <label for="sampleName">Your name</label>
+              <input id="sampleName" name="name" placeholder="e.g. Jamie Taylor" autocomplete="off" required>
+              <label for="sampleContact">Phone or email</label>
+              <input id="sampleContact" name="contact" placeholder="How can the business reach you?" autocomplete="off" required>
+              <label for="sampleService">What service do you need?</label>
+              <select id="sampleService" name="service" required>
+                <option value="">Choose a service</option>
+                <option>Plumbing repair</option>
+                <option>Roof repair</option>
+                <option>Roof replacement</option>
+                <option>Heating or cooling</option>
+                <option>Electrical</option>
+                <option>Cleaning</option>
+                <option>Other</option>
+              </select>
+              <label for="sampleDescription">Describe the job</label>
+              <textarea id="sampleDescription" name="description" rows="3" placeholder="Briefly describe what you need..." required></textarea>
+              <button class="button sample-submit" type="submit">Preview form submission <span>→</span></button>
+              <p class="sample-form-message" id="sampleFormMessage" role="status" aria-live="polite">Demo only. Submitting will not contact a business or save any information.</p>
+            </form>
+          </div>
+        </div>
+
+        <div class="demo-bottom-cta">
+          <div><strong>Ready to put your leads in order?</strong><p>Review the setup and subscription pricing before moving forward.</p></div>
+          <a class="button" href="#pricing">View pricing <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell section-block pricing-section" id="pricing">
+      <div class="section-heading">
+        <span class="eyebrow">STRAIGHTFORWARD PRICING</span>
+        <h2>One system. <span class="gradient-text">Your business in focus.</span></h2>
+        <p>Transparent pricing for businesses ready to organize their lead process.</p>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-top">
+          <div>
+            <span class="plan-label">LEADFLOW SETUP + SUBSCRIPTION</span>
+            <h3>LeadFlow Business</h3>
+            <p>Application access and guided initial setup.</p>
+          </div>
+          <div class="pricing-badge">One-time setup + recurring access</div>
+        </div>
+
+        <div class="price-line">
+          <span class="currency">$</span><span class="price">999.99</span>
+          <span class="price-period">one-time setup</span>
+        </div>
+        <div class="subscription-line">Then <strong>$45/month</strong> for continued software access.</div>
+
+        <div class="pricing-divider"></div>
+
+        <ul class="pricing-features">
+          <li><span>✓</span> Business workspace setup</li>
+          <li><span>✓</span> Lead management and status tracking</li>
+          <li><span>✓</span> Customer inquiry form configuration</li>
+          <li><span>✓</span> Lead reporting and data export</li>
+          <li><span>✓</span> Ongoing application access while subscribed</li>
+        </ul>
+
+        <a class="button pricing-button" data-demo-link href="#demo">Explore the demo before purchasing <span>→</span></a>
+        <p class="pricing-footnote">
+          Setup scope, subscription terms, and any usage limits must be agreed
+          before purchase. The button does not process payment until checkout
+          is configured.
+        </p>
+      </div>
+    </section>
+
+    <section class="closing-section" id="get-started">
+      <div class="section-shell closing-inner">
+        <span class="eyebrow">TAKE THE NEXT STEP</span>
+        <h2>Give every inquiry<br>a place to go.</h2>
+        <p>Explore LeadFlow and see how it fits your business's workflow.</p>
+        <a class="button" data-demo-link href="#demo">Open LeadFlow demo <span>↗</span></a>
+        <p class="closing-note">Not sure if it fits? Explore the product first, then decide.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#home">
+      <span class="brand-mark">L</span>
+      <span>Lead<span class="brand-accent">Flow</span></span>
+    </a>
+    <p>Lead management for businesses that value every opportunity.</p>
+    <span class="copyright">© <span id="currentYear"></span> LeadFlow</span>
+  </footer>
+</body>
+</html>
